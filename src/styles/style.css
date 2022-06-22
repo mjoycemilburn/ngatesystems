@@ -1,0 +1,157 @@
+/*
+The min-width property defines the minimum width of an element. If the content is smaller than the minimum width,
+the minimum width will be applied. If the content is larger than the minimum width, the min-width property has no effect. 
+Note: This prevents the value of the width property from becoming smaller than min-width.
+*/
+
+body {
+    margin: 0;
+    font-family: Ubuntu, Roboto, Oxygen, Cantarell, "Helvetica Neue", sans-serif;
+    background-color: #2A2B2E;
+}
+
+a {
+    text-decoration: none;
+    background-color: #00FF00;
+}
+
+button {
+    background-color: #00FF00;
+    padding: .25rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.HomeTitle {
+    display: none;
+}
+
+.HomeNav {
+    display: inline;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+
+
+.CardsContainer {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.CardContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.CardLeft {
+    display: none;
+}
+
+.CardCenter {
+    display: none;
+}
+
+
+.CardRight {
+    display: inline-block;
+    width: 80%;
+    line-height: 140%;
+    background: black;
+    color: white;
+    padding: 2%;
+    margin: 2%;
+}
+
+.PostTitle {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 120%;
+}
+
+.HorizontalSeparator {
+    background-color: rgb(255, 124, 12);
+    width: 90%;
+    min-height: 1px;
+    margin: auto auto 1rem auto;
+}
+
+.PhoneCardRightDescription {
+    display: block;
+}
+
+.LaptopCardRightDescription {
+    display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    /*  This essentially states that this rules applies only when the window width is at least 1024ppx.
+    Order matters - you need to set the rules for smaller screens before larger ones*/
+    .HomeTitle {
+        display: inline;
+        font-size: 1.5rem;
+        color: white;
+        margin: 0 auto 0 2rem;
+    }
+
+    .HomeNav {
+        display: inline;
+        margin: 0 2rem 0 auto;
+    }
+
+    .CardsContainer {
+        width: 70vw;
+    }
+
+    .CardContainer {
+        height: 70vh;
+    }
+
+    .CardLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+        padding: 2% 0 2% 3%;
+        margin: 2%;
+    }
+
+    .CardCenter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .VerticalSeparator {
+        background-color: rgb(255, 124, 124);
+        height: 90%;
+        width: 1px;
+        margin: auto 2% auto 2%;
+    }
+
+    .CardRight {
+        width: 40%;
+        overflow: auto;
+    }
+
+    .HorizontalSeparator {
+        display: none;
+    }
+
+    .PhoneCardRightDescription {
+        display: none;
+    }
+
+    .LaptopCardRightDescription {
+        display: block;
+    }
+}
