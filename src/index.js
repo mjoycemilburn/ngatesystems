@@ -3,6 +3,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
+  Navigate
 } from "react-router-dom";
 
 import App from "./App";
@@ -22,6 +23,7 @@ root.render(
         <Route path="about" element={<About postTitle="About" />} />
         <Route path="waypoints" element={<Waypoints />} />
         <Route path="examples" element={<Examples />} />
+        <Route path="/" element={<About postTitle="About" />} />
       </Route>
     </Routes>
   </BrowserRouter>

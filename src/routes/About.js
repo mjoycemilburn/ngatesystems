@@ -45,7 +45,7 @@ function About(props) {
                             <p>This site introduces a training series that will enable anyone with a keen mind and a determined spirit to
                                 develop software that could change the world.</p>
 
-                            <p>And it won't cost you a penny/dime/renminbi!{stateObject.moreButtonStillInInitialState ? <span> ...</span> : <span />}</p>
+                            <p>And it won't cost them a penny/dime/renminbi!{stateObject.moreButtonStillInInitialState ? <span> ...</span> : <span />}</p>
 
                             <div style={{ textAlign: "Center" }}>
                                 <button onClick={() => updateStateObject(

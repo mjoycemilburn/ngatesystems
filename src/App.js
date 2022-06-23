@@ -45,7 +45,6 @@ export default function App() {
         </div>
       </nav>
       <Outlet />
-      <About />
     </div>
   );
 }

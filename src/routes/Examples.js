@@ -90,15 +90,15 @@ function Examples() {
             postTitle: "ngatesystems.web.app",
             imageTitle: "An introduction to modern IT Systems Development Techniques",
             webappUrl: "https://ngatesystems.web.app/",
-            gitCodeUrl: "https://github.com/mjoycemilburn/pclitewebapp/tree/master/public",
+            gitCodeUrl: "https://github.com/mjoycemilburn/ngatesystems",
             description: `
             <p>If you would like to see a bit more "Reactified" Javascript, together with  a "page" structure
             (courtesy of 'react-router') and some modest ambitions to provide a "responsive" display - one that
-            adapts itslef to the dimension of the display on which it renders its output. You might
-            be interested to have a look at the code of the ngatesystems.web.app webapp.</p>
-            <p>I wrote this because I've enjoyed using React so much that I wanted to try a bit more while at
-            the same time exploring the use of "routes" to implement a virtual page structure within a 'single-page'
-            webapp.</p>
+            adapts itself to the dimensions of the display on which it renders its output - you might
+            be interested to have a look at the code of the ngatesystems.web.app webapp itself.</p>
+            <p>I wrote this because I've enjoyed using React so much that I wanted to explore a bit more of this
+            extraordinary technology whilst also investigating the use of "routes" to implement a virtual page
+            structure within a 'single-page' webapp.</p>
             <p>I think it works a treat!</p>
             `
         },
